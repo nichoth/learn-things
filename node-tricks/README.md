@@ -36,6 +36,12 @@ var crypto = require('crypto')
 crypto.randomBytes(32).toString('base64')
 ```
 
+## run js from bash
+
+```bash
+node -e "console.log(require('crypto').randomBytes(32).toString('hex'));"
+```
+
 ## buffer encodings
 
 * 'ascii' - For 7-bit ASCII data only. This encoding is fast and will strip the high bit if set.
