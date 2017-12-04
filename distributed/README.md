@@ -70,7 +70,11 @@ What happens if you start the client before the server? Or if the server goes of
 Error: connect ECONNREFUSED 127.0.0.1:8000
 ```
 
-To better decouple the client and server, you want the client to automatically try connecting until a server comes online. But that's too much work to do yourself -- look at [reconnect-core](https://www.npmjs.com/package/reconnect-core)
+To better decouple the client and server, you want the client to automatically try connecting until a server comes online. But that's too much work to do yourself -- look at these:
+
+* [reconnect-core](https://www.npmjs.com/package/reconnect-core)
+* [try-again](https://github.com/matthewmueller/try-again)
+
 
 ## multiplexing
 
