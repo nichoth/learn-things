@@ -72,5 +72,5 @@ To better decouple the client and server, you would want the client to automatic
 
 ## multiplexing
 
-Pipe several streams through a single socket. Check out this example [https://github.com/hugozap/shoe-reconnect-muxdemux-example](https://github.com/hugozap/shoe-reconnect-muxdemux-example)
+Pipe several streams through a single socket. Check out this [example](https://github.com/hugozap/shoe-reconnect-muxdemux-example)
 
