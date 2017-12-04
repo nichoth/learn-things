@@ -61,3 +61,10 @@ module.exports = start
 
 </details>
 
+What happens if you start the client before the server? 
+```
+Error: connect ECONNREFUSED 127.0.0.1:8000
+```
+
+To better decouple the client and server, you would want the client to automatically try connecting until a server comes online. But that's too much work to do yourself -- look at [reconnect-core](https://www.npmjs.com/package/reconnect-core)
+
