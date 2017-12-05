@@ -127,7 +127,7 @@ What this means is that we are not able to send multiple requests in parallel. T
 
 See also
 * [ssbc/packet-stream](https://github.com/ssbc/packet-stream)
-* [socketio/socket.io-client] (https://github.com/socketio/socket.io-client)
+* [socketio/socket.io-client](https://github.com/socketio/socket.io-client)
 * [tj/axon](https://github.com/tj/axon)
 
 ## dealer & router
