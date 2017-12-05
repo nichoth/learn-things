@@ -117,13 +117,13 @@ req.on('data', function (msg) {
 
 ------------------------------
 
-So this is weird. In node we use callback functions for response semantics, but here there is a subscription API:
+So this is weird. In node we use callback functions for response semantics, but this has a subscription API:
 
 ```js
 req.send('hello', function onResponse (err, data) {})
 ```
 
-What this means is that we are not able to send multiple requests in parallel. This is part of the protocol in nanomsg, which is based on [zeroMq](http://zeromq.org/). The responder is guaranteed to only get one message at a time, until it sends a response.
+This means that we are not able to send multiple requests in parallel. This is part of the nanomsg protocol, which is based on [zeroMq](http://zeromq.org/). The responder (server) is guaranteed to only get one message at a time, until it sends a response.
 
 See also
 * [ssbc/packet-stream](https://github.com/ssbc/packet-stream)
@@ -144,5 +144,23 @@ Pipe several streams through a single socket. Check out this [example](https://g
 
 ## discovery
 
-[mafintosh/dns-discovery](https://github.com/mafintosh/dns-discovery)
+* [mafintosh/dns-discovery](https://github.com/mafintosh/dns-discovery)
+
+
+## application sharding
+
+Partitioning is a way to scale a stateful service, for example a socket server. Instead of having stateless servers, we keep all state related to a specific facet of our domain on one server.
+
+[dynamo db whitepaper](http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)
+
+### upring
+
+This uses consistent hashing and the [swim](https://www.cs.cornell.edu/~asdas/research/dsn02-swim.pdf) protocol to implement failover. Consistent hashses create a uniform distribution of connections amongst servers.
+
+
+* [upringjs/upring](https://github.com/upringjs/upring)
+* [Building a Scalable Pub/Sub system with UpRing (video)](https://www.youtube.com/watch?v=IWmPk6UNCIc)
+
+
+
 
