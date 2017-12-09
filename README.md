@@ -4,4 +4,5 @@ Things to know
 * [distributed patterns](distributed)
 * [a list of streams for javascript](streams)
 * [cryptography](cryptography)
+* [frontend-tests](frontend-tests)
 
