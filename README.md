@@ -1,8 +1,8 @@
 Things to know
 
-* [node tricks](node-tricks)
-* [distributed patterns](distributed)
-* [a list of streams for javascript](streams)
 * [cryptography](cryptography)
-* [frontend-tests](frontend-tests)
+* [distributed patterns](distributed)
+* [frontend](frontend)
+* [node tricks](node-tricks)
+* [a list of streams for javascript](streams)
 

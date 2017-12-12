@@ -1,6 +1,17 @@
-# frontend test recipe
+# frontend
 
-Use some shell pipes to run tests in a browser with custom html file.
+## package scripts
+
+```js
+{
+    "scripts": {
+    }
+}
+```
+
+## frontend test recipe
+
+Use some shell pipes to run tests in a browser with custom html file. This is good for when your code *requires* a browser environment. It's preferable whenever possible to write code that is environment agnostic -- that runs either in node or browsers.
 
 ```bash
 browserify test/index.js | htmlify test/index.html | tape-run --input html
