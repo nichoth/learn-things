@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "upring": "^0.22.0",
+    "upring-pubsub": "^0.3.0"
+  }
+}

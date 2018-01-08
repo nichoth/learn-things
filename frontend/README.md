@@ -5,6 +5,10 @@
 ```js
 {
     "scripts": {
+        "preversion": "npm run lint && npm test",
+        "postversion": "git push && git push --tags && npm publish",
+        "lint": "eslint .",
+        "test": "tape test/*.js | tap-spec"
     }
 }
 ```

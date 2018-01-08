@@ -141,6 +141,9 @@ In nanomsg/zeroMq context, parallel requests are done with a dealer/router struc
 
 Pipe several streams through a single socket. Check out this [example](https://github.com/hugozap/shoe-reconnect-muxdemux-example)
 
+* [mcollina/tentacoli](https://github.com/mcollina/tentacoli)
+* [https://github.com/maxogden/multiplex](https://github.com/maxogden/multiplex)
+
 
 ## discovery
 
@@ -149,7 +152,7 @@ Pipe several streams through a single socket. Check out this [example](https://g
 
 ## application sharding
 
-Partitioning is a way to scale a stateful service, for example a socket server. Instead of having stateless servers, we keep all state related to a specific facet of our domain on one server.
+Partitioning is a way to scale a stateful service, for example a websocket server. Instead of having stateless servers, we keep state and replicate it to accomodate failover.
 
 [dynamo db whitepaper](http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)
 
@@ -160,6 +163,8 @@ This uses consistent hashing and the [swim](https://www.cs.cornell.edu/~asdas/re
 
 * [upringjs/upring](https://github.com/upringjs/upring)
 * [Building a Scalable Pub/Sub system with UpRing (video)](https://www.youtube.com/watch?v=IWmPk6UNCIc)
+
+### redis
 
 
 
