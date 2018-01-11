@@ -6,7 +6,7 @@ See the book *Node Cookbook*
 
 Decouple the network layer by factoring the functionality as a separate module.
 
-wiring.js
+### wiring.js
 
 <details>
 
@@ -36,7 +36,7 @@ function wiring (service) {
 
 </details>
 
-service.js
+### service.js
 
 <details>
 
@@ -56,7 +56,7 @@ function service () {
 
 </details>
 
-index.js
+### index.js
 
 Glue everything together
 
