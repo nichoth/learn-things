@@ -2,6 +2,10 @@
 
 ## decouple the IO layer
 
+See the book *Node Cookbook*
+
+Decouple the network layer by factoring the functionality as a separate module.
+
 wiring.js
 
 <details>
