@@ -4,8 +4,8 @@
   },
   "devDependencies": {
     "browserify": "^14.5.0",
-    "inline-htmlify": "^2.0.0",
+    "inline-htmlify": "^2.0.1",
     "tape": "^4.8.0",
-    "tape-run": "^3.0.1"
+    "tape-run": "^11.0.0"
   }
 }
