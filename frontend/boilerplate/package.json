@@ -8,9 +8,9 @@
   },
   "devDependencies": {
     "dependency-check": "^2.9.2",
-    "eslint": "^4.13.1",
+    "eslint": "^9.12.0",
     "eslint-config-minlint": "^2.0.0",
-    "tap-spec": "^4.1.1",
+    "tap-spec": "^5.0.0",
     "tape": "^4.8.0"
   }
 }
